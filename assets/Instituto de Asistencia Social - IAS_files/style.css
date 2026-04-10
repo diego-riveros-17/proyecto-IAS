@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.margen-contenido {
+  margin: 15px;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+.justificar.texto {
+  text-align: justify;
+}
+
+.destacado {
+  text-align: center;
+}
+
+.btn-enviar {
+  text-align: center;
+}
+
+.servicio-item li {
+  text-align: left;
+  margin: 10px;
+  font-weight: bold;
+}
+
+li p {
+  font-weight: normal;
+}
+
+header {
+  background-image: url("../assets/logo_header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+nav {
+  background-color: yellowgreen;
+  text-align: center;
+  padding: 10px;
+}
+
+section img {
+  float: left; /* Hace que la imagen se mueva a la izquierda y el texto suba */
+  margin-right: 20px; /* Deja un espacio para que el texto no pegue a la foto */
+  margin-bottom: 10px; /* Espacio por si el texto es muy largo y pasa por debajo */
+  width: 500px;
+  height: 300px;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+}
+
+header h1 {
+  margin-left: 15%;
+  text-align: center;
+  padding: 10px;
+}
+
+header h2 {
+  margin-left: 15%;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  width: 100%;
+  margin: 20px auto;
+  /* height: auto; */
+  box-shadow: 0 0 100px gray;
+  border-radius: 10px;
+}
+
+section {
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+}
+
+img {
+  width: 35%;
+  height: 100%;
+}
+
+figure img {
+  width: 35%;
+  height: auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: yellowgreen;
+}
+
+footer {
+  background-color: yellowgreen;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  margin-top: auto;
+  font-weight: bold;
+}

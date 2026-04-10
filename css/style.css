@@ -1,0 +1,234 @@
+/*
+Archivo: style.css
+Proyecto: Sitio Web IAS
+Descripción: Estilos generales para todas las páginas
+
+No se utilizo display flex o grid, para manipular el comportamiento de los elementos.
+
+Paleta de colores:
+- Negro: fondos principales, como el la barra de navegacion, y la mayor parte de los textos. El negro es un color fuerte asociado con sofisticación, elegancia, autoridad, poder, estabilidad, fuerza, formalidad e inteligencia
+- Verde amarillento (yellowgreen): detalles y hover, color asociado a la isntitución.
+- Blanco: detalles como los links de la barra de navegacion.
+- Azul: botón enviar
+*/
+
+/* Reset general de márgenes, padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del body: tipografía, tamaño y espaciado */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  line-height: 1.6;
+  background-image: url("../assets/bg_page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  background-color: #f4f4f4;
+}
+
+/* Tipografía para títulos principales */
+h1,
+h2,
+h3 {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Margen izquierdo para el título del header */
+.titulo-header {
+  margin-left: 150px;
+}
+
+/* Clase para centrar texto */
+.texto-centrado {
+  text-align: center;
+}
+
+/* Clase para justificar texto */
+.texto-justificado {
+  text-align: justify;
+  font-weight: normal;
+}
+
+/* Clase para aplicar negrita */
+.texto-negrita {
+  font-weight: bold;
+}
+
+/* Estilo para enlaces dentro del nav */
+nav a {
+  margin: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Efecto hover en enlaces del nav */
+nav a:hover {
+  color: yellowgreen;
+}
+
+/* Estilo de la barra de navegación: tamaño, color y alineación */
+#barra-navegacion {
+  padding: 25px;
+  width: 100%;
+  background-color: #333333;
+  text-align: center;
+}
+
+/* Imagen dentro de sección, tamaño y alineación */
+
+.section-bienvenida {
+  text-align: center;
+}
+
+.section-bienvenida img {
+  width: 35%;
+  height: auto;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* Imagen dentro de article, tamaño y alineación */
+article img {
+  width: 35%;
+  height: auto;
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+/* Limpieza de float despues de la imagen */
+article::after {
+  overflow: hidden;
+  clear: both;
+}
+
+/* Fondo con imagen para el header  */
+.destacado {
+  background-image: url("../assets/logo_header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Margen general para section y aside */
+.margen {
+  margin: 20px;
+}
+
+/* Estilo del formulario de contacto: borde, padding y ancho */
+#formulario-contacto form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 40%;
+  background-color: #f8e1e1c9;
+  border-radius: 10px;
+}
+
+/* Estilo para etiquetas de formulario */
+label {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para inputs, select y textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Efecto focus en campos de formulario */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: yellowgreen;
+  outline: none;
+}
+
+/* Estilo para select, tamaño */
+select {
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(216, 240, 240);
+  margin-top: 10px;
+}
+
+/* Estilo para textarea */
+textarea {
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  color: black;
+}
+
+/* Estilo para la tabla, bordes */
+table,
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Estilo de encabezado de la tabla */
+th {
+  background-color: black;
+  border: 2px solid yellowgreen;
+  color: yellowgreen;
+}
+
+/* Estilo del botón enviar */
+.btn-enviar {
+  background-color: #2773f5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Efecto hover del botón enviar */
+.btn-enviar:hover {
+  background-color: green;
+}
+
+/* Estilo del iframe, ancho y alto */
+iframe {
+  width: 50%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilo del footer: fondo, color, alineación */
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: black;
+  text-align: center;
+  color: yellowgreen;
+  margin-top: auto;
+  font-weight: bold;
+}

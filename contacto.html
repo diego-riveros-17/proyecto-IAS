@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto de Asistencia Social - IAS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/icon.jpg" type="image/png" />
+  </head>
+
+  <!--
+      Página: Contacto
+      Descripción: Página de contacto del sitio web del IAS
+      Autor: [Riveros Diego Fernando]
+      Fecha: [06/04/2026]
+-->
+
+  <body>
+    <!-- El <header> es la parte inicial de una página, suele incluir el título, el logo o el menú de navegación. Tambien facilita que navegadores y herramientas de accesibilidad entiendan mejor la estructura. -->
+
+    <header class="destacado">
+      <h1 class="texto-centrado titulo-header">
+        Instituto de Asistencia Social - IAS
+      </h1>
+      <h2 class="texto-centrado titulo-header">
+        Organismo de Control de Juegos de Azar - Formosa
+      </h2>
+    </header>
+
+    <!-- Barra de Navegacion -->
+    <nav id="barra-navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-ias.html">Sobre IAS</a>
+      <a href="funciones.html">Funciones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Contenido principal de la pagina -->
+    <main>
+      <!-- Agrupa contenido relacionado dentro del main-->
+      <section class="margen">
+        <h2>Contacto</h2>
+        <ul class="margen">
+          <li>
+            Dirección
+            <address>Belgrano 798 - Formosa Capital CP P3600COR</address>
+          </li>
+          <li>Teléfono <em>(+54) (370) 4429568</em></li>
+          <li>
+            Correo Electrónico
+            <a href="mailto:info@ias.gob.ar"
+              >Enviar un mail a info@ias.gob.ar</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="margen" id="formulario-contacto">
+        <!-- Formulario de contacto, permite al usuario enviar consultas al IAS.
+         Incluye campos obligatorios como nombre, email, teléfono, motivo y mensaje.
+         -->
+        <form action="#" method="post">
+          <label for="nombre">Nombre: </label><br /><input
+            name="nombre"
+            id="nombre"
+            type="text"
+            placeholder="Nombre"
+            required
+          />
+          <br />
+          <label for="email">Email: </label>
+          <br /><input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="E-mail"
+            required
+          />
+          <br />
+          <label for="telefono">Teléfono: </label><br />
+          <input
+            name="telefono"
+            type="tel"
+            id="telefono"
+            placeholder="Telefono"
+            required
+          />
+          <br />
+
+          <label for="motivo">Motivo de la consulta</label>
+          <br />
+          <select name="motivo" id="motivo">
+            <option selected value="0">Seleccione una opción</option>
+            <option value="1">Denuciar juego clandestino</option>
+            <option value="2">Consulta</option>
+            <option value="3">Lavado de activos</option>
+          </select>
+          <br />
+
+          <label for="mensaje">Mensaje:</label>
+          <br />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Tu mensaje..."
+          ></textarea>
+          <br />
+
+          <details>
+            <summary>
+              <strong>Horarios de atención</strong> (Clic para expandir)
+            </summary>
+
+            <p>
+              Para una mejor atención, contamos con horarios especiales en las
+              siguientes sedes:
+            </p>
+            <ul>
+              <li>
+                <strong>Sede Central:</strong> Lunes a Viernes de 10:00 a 22:30
+                hs (Horario corrido).
+              </li>
+              <li>
+                <strong>Anexo de Sorteos:</strong> Lunes a Sábados de 08:00 a
+                13:00 hs. y Domingos 19:00 a 20:00
+              </li>
+            </ul>
+            <p>
+              <small
+                >* Los horarios pueden variar durante recesos
+                administrativos.</small
+              >
+            </p>
+          </details>
+
+          <br />
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+
+      <!-- Contenido complementario -->
+      <aside class="margen">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28643.497640776804!2d-58.203059025683615!3d-26.182452399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5dd94bf8b9f%3A0xc46100b79e1161f8!2sInstituto%20de%20Asistencia%20Social!5e0!3m2!1ses-419!2sar!4v1775331765271!5m2!1ses-419!2sar"
+          title="Ubicación del IAS en Google Maps"
+        ></iframe>
+      </aside>
+    </main>
+
+    <!-- Pie de pagina con info de cierre -->
+    <footer>
+      <p>Instituto de Asistencia Social &copy; 2026</p>
+      <p><small>(+54) (370) 4429568 </small>- info@ias.gob.ar</p>
+    </footer>
+  </body>
+</html>
