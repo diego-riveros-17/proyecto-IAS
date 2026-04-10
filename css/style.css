@@ -30,6 +30,13 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Contenedor general para el contenido */
+.container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
 /* Tipografía para títulos principales */
 h1,
 h2,
