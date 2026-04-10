@@ -86,6 +86,9 @@ nav a:hover {
   color: yellowgreen;
 }
 
+article div ul {
+  display: grid;
+}
 /* Estilo de la barra de navegación: tamaño, color y alineación */
 #barra-navegacion {
   padding: 25px;
