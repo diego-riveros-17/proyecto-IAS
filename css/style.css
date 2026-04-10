@@ -74,6 +74,13 @@ nav a {
   color: white;
 }
 
+/* Se distribuye los elementos de la lista uniformemente en el espacio disponible y se quitaron las viñetas de la lista */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
 /* Efecto hover en enlaces del nav */
 nav a:hover {
   color: yellowgreen;
