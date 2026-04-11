@@ -105,12 +105,20 @@ ol {
 /* Imagen dentro de sección, tamaño y alineación */
 
 .section-bienvenida {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
 }
 
 .section-bienvenida img {
-  width: 35%;
+  width: 100%;
   height: auto;
+}
+
+.section-bienvenida figure {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 15px;
 }
 
 main {
@@ -130,12 +138,6 @@ article img {
   margin-left: 30px;
 }
 
-/* Limpieza de float despues de la imagen */
-article::after {
-  overflow: hidden;
-  clear: both;
-}
-
 /* Fondo con imagen para el header  */
 .destacado {
   background-image: url("../assets/logo_header.png");
@@ -149,31 +151,44 @@ article::after {
 }
 
 /* Estilo del formulario de contacto: borde, padding y ancho */
-#formulario-contacto form {
-  padding: 20px;
-  border: 1px solid #ccc;
-  max-width: 40%;
-  background-color: #f8e1e1c9;
+#formulario-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  border: 1px solid #aaa7a7;
   border-radius: 10px;
 }
 
-/* Estilo para etiquetas de formulario */
+/* Estilo para etiquetas de formulario ancho, margen externo, y espaciado interno */
 label {
-  width: 200px;
-  margin-bottom: 20px;
+  width: 100px;
+  margin: 10px;
 }
 
 /* Estilo para inputs, select y textarea */
 input[type="text"],
 input[type="email"],
-input[type="tel"],
-select,
-textarea {
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 15px;
+input[type="tel"] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+select {
+  width: 520px;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*Ancho de textarea*/
+textarea {
+  width: 100%;
+  margin: 0 10px;
 }
 
 /* Efecto focus en campos de formulario */
@@ -182,6 +197,7 @@ select:focus,
 textarea:focus {
   border-color: yellowgreen;
   outline: none;
+  box-shadow: 3px 3px 5px yellowgreen;
 }
 
 /* Estilo para select, tamaño */
@@ -198,7 +214,6 @@ textarea {
   height: 150px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  margin-top: 10px;
   background-color: #f8f8f8;
   color: black;
 }
@@ -225,20 +240,21 @@ th {
 /* Estilo del botón enviar */
 .btn-enviar {
   background-color: #2773f5;
+  width: 100%;
   border: none;
   border-radius: 5px;
   color: white;
   padding: 15px 32px;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
 
 /* Efecto hover del botón enviar */
 .btn-enviar:hover {
-  background-color: green;
+  background-color: yellowgreen;
 }
 
 /* Estilo del iframe, ancho y alto */
