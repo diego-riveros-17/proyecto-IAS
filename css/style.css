@@ -265,11 +265,14 @@ iframe {
 }
 
 /* Estilo del footer: fondo, color, alineación */
+
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   padding: 25px;
   background-color: black;
-  text-align: center;
   color: yellowgreen;
   margin-top: auto;
   font-weight: bold;
