@@ -31,6 +31,10 @@ body {
 }
 
 /* Contenedor general para el contenido */
+/*Grid para [clase .container]
+- display: grid, Activa CSS Grid. Los hijos directos pasan a ser grid items ubicados en filas y columnas .. 
+- grid-template-rows: Define el número y tamaño de las files. Acepta px, %, fr, repeat() y minmax().
+*/
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
@@ -75,6 +79,10 @@ nav a {
 }
 
 /* Se distribuye los elementos de la lista uniformemente en el espacio disponible y se quitaron las viñetas de la lista */
+/* Flexbox para [ul: lista de la barra de navegacion]
+- display: flex, activa el modo flexbox.
+- justify-content: space-around: permite distribuir los flex items de manera uniforme*/
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -87,6 +95,10 @@ nav a:hover {
 }
 
 /*Se divide la lista de funciones y compromiso... en 2 columnas iguales */
+/*Grid para [ul y ol, lista de funciones y compromiso]
+- display: grid, Activa CSS Grid. Los hijos directos pasan a ser grid items ubicados en filas y columnas .. 
+- grid-template-columns: Define el número y tamaño de las columnas. Acepta px, %, fr, repeat() y minmax().
+-gap: Espacio entre grid items.*/
 article div ul,
 ol {
   display: grid;
@@ -104,6 +116,10 @@ ol {
 
 /* Imagen dentro de sección, tamaño y alineación */
 
+/*Grid para [section]
+- display: grid, Activa CSS Grid. Los hijos directos pasan a ser grid items ubicados en filas y columnas .. 
+- grid-template-columns: Define el número y tamaño de las columnas. Acepta px, %, fr, repeat() y minmax().
+-gap: Espacio entre grid items.*/
 .section-bienvenida {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -121,6 +137,9 @@ ol {
   gap: 15px;
 }
 
+/*Grid para [main: contenido principal de todas la paginas]
+- display: grid, Activa CSS Grid. Los hijos directos pasan a ser grid items ubicados en filas y columnas.
+- grid-template-columns: Define el número y tamaño de las columnas. Acepta px, %, fr, repeat() y minmax().*/
 main {
   display: grid;
   grid-template-columns: repeat(1, minmax(auto, 1fr));
@@ -151,6 +170,10 @@ article img {
 }
 
 /* Estilo del formulario de contacto: borde, padding y ancho */
+/* Flexbox para [form: formulario de contacto]
+- display: flex, activa el modo flexbox. 
+- flex-wrap: permite que los elementos hijos de un contenedor flexible salten a la siguiente línea (o columna) cuando ya no hay suficiente espacio en la fila original.
+-gap: Espacio entre flex items. Equivale a definir row-gap y column-gap al mismo tiempo.*/
 #formulario-contacto {
   display: flex;
   flex-wrap: wrap;
@@ -264,7 +287,10 @@ iframe {
   border: 0;
 }
 
-/* Estilo del footer: fondo, color, alineación */
+/* Flexbox para [footer: Información de derechos de autor - Año actual]
+- display: flex, activa el modo flexbox.
+- flex-direction: Define el eje principal. row: izq a der. column: arriba a abajo. row-reverse y column-reverse invierten el orden. 
+-align-items: Alinea los items en el eje  dependiendo de la propiedad establecida center, al centro*/
 
 footer {
   display: flex;
